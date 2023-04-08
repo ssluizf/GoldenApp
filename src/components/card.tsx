@@ -16,7 +16,7 @@ export default function Card() {
             value={meaning}
             onChange={(e) => setMeaning((e.target as HTMLInputElement).value)}
           />
-          <div className="flex flex-col">
+          <div className="flex flex-col h-6">
             <hr className="w-full m-auto px-1 border border-black" />
           </div>
         </>
@@ -28,7 +28,7 @@ export default function Card() {
         value={symbol}
         onChange={(e) => setSymbol((e.target as HTMLInputElement).value)}
       />
-      <div className="flex flex-col group-last:invisible group-hover:visible peer-focus:visible">
+      <div className="flex flex-col h-6 group-last:invisible group-hover:visible peer-focus:visible">
         <hr className="w-full m-auto px-1 border border-black" />
       </div>
     </div>
