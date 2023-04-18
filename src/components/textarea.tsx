@@ -2,6 +2,7 @@ import { HTMLProps } from "react";
 
 export default function Textarea({
   className,
+  onChange = () => {},
   ...props
 }: HTMLProps<HTMLTextAreaElement>) {
   function resizeTextareaWithContent(e: any) {
@@ -17,8 +18,10 @@ export default function Textarea({
     <textarea
       className={`flex-1 bg-transparent outline-none resize-none overflow-hidden placeholder:text-black ${className}`}
       rows={1}
-      onKeyUp={resizeTextareaWithContent}
-      onKeyDown={resizeTextareaWithContent}
+      onChange={(e) => {
+        resizeTextareaWithContent(e);
+        onChange(e);
+      }}
       {...props}
     />
   );
