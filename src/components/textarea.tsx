@@ -16,7 +16,7 @@ export default function Textarea({
 
   return (
     <textarea
-      className={`flex-1 bg-transparent outline-none resize-none overflow-hidden placeholder:text-black ${className}`}
+      className={`flex-1 bg-transparent outline-none resize-none overflow-hidden ${className}`}
       rows={1}
       onChange={(e) => {
         resizeTextareaWithContent(e);

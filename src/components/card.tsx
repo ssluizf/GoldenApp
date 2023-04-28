@@ -39,30 +39,30 @@ export default function Card({ defaultCard, updateCard }: Card) {
   const debouncedOnChange = debounce(handleChange, 200);
 
   return (
-    <div className="group flex flex-row-reverse w-full space-x-8 space-x-reverse">
+    <div className="text-zinc-900 group flex flex-row-reverse w-full space-x-8 space-x-reverse">
       {(card.symbol || card.meaning) && (
         <>
           <Textarea
             name="meaning"
             placeholder="Add the meaning or translation"
-            className="peer placeholder:text-transparent group-first:placeholder:text-current"
+            className="peer placeholder:text-transparent group-first:placeholder:text-zinc-600"
             onChange={debouncedOnChange}
             defaultValue={defaultCard.meaning}
           />
           <div className="flex flex-col h-6">
-            <hr className="w-full m-auto px-1 border border-black" />
+            <hr className="w-full m-auto px-1 border border-zinc-500" />
           </div>
         </>
       )}
       <Textarea
         name="symbol"
         placeholder="Add a word, phrase or symbol"
-        className="peer placeholder:text-transparent group-first:placeholder:text-current"
+        className="peer placeholder:text-transparent group-first:placeholder:text-zinc-600"
         onChange={debouncedOnChange}
         defaultValue={defaultCard.symbol}
       />
       <div className="flex flex-col h-6 group-last:invisible group-only:visible group-hover:visible peer-focus:visible">
-        <hr className="w-full m-auto px-1 border border-black" />
+        <hr className="w-full m-auto px-1 border border-zinc-500" />
       </div>
     </div>
   );

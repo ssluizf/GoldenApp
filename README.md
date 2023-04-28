@@ -1,4 +1,8 @@
-# Golden App
+# Golden Learn
+
+<h4 align="center">
+  🚧 In building progress 🚧
+</h4>
 
 [//]: # "Prints"
 
@@ -6,7 +10,7 @@
 
 ---
 
-The Golden App is an application for learning languages with the gold list method, which uses spaced-repetion for learning another language.
+The Golden Learn is an application for learning languages with the gold list method, which uses spaced-repetion for learning another language.
 
 ## Motivation
 

@@ -4,11 +4,11 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import Block from "./block";
 
 export default function Page() {
-  const DEFAULT_TITLE = "Theme 07-04-2023";
+  const DEFAULT_TITLE = "My page 07-04-2023";
   const [pageTitle, setPageTitle] = useState(DEFAULT_TITLE);
 
   return (
-    <div className="grid h-screen bg-gray-400">
+    <div className="grid h-screen text-zinc-900 bg-slate-50">
       <div className="justify-self-end w-9/12">
         <div className="flex items-center mt-4 pl-6">
           <button type="button" title="Prev page" className="h-6">
