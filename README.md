@@ -25,7 +25,7 @@ This application purpose is mainly for studies over the Next.js framework. I've 
 first clone or download the repository
 
 ```
-git clone https://github.com/lucasmontano/twitch.git
+git clone https://github.com/ssluizf/GoldenApp.git
 ```
 
 After that you can install the dependencies by executing the following command in the root folder of the project
